@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
     "next": "16.1.0",
@@ -23,8 +24,4 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
-  "scripts": {
-  "test": "echo \"No tests specified\" && exit 0"
-}
-
 }
