@@ -1,49 +1,30 @@
-import Image from "next/image";
+import About from "./about/page";
+import Contact from "./contact/page";
+import Projects from "./projects/page";
+import Resume from "./resume/page";
+import Skills from "./skills/page";
+
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-       <nav className="w-full mb-16 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-            Camilly Larissa
-          </h1>
-          <ul className="flex space-x-8">
-             <li>
-              <a
-                href="#resume"
-                className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-              >
-                Resumo
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-              >
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-              >
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-              >
-                Contato
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <>
+      <main id="home" className="flex flex-col items-center min-h-screen gap-10 w-full">
+      <section id="resume" className="container mx-auto p-10 rounded-lg shadow-md">
+        <Resume />
+      </section>
+      <section id="about" className="container mx-auto p-10 bg-white rounded-lg shadow-md">
+        <About />
+      </section>
+      <section id="projects" className="container mx-auto p-10 bg-white rounded-lg shadow-md">
+        <Projects />
+      </section>
+      <section id="skills" className="container mx-auto p-10 bg-white rounded-lg shadow-md">
+        <Skills />
+      </section>
+      <section id="contact" className="container mx-auto p-10 bg-white rounded-lg shadow-md">
+        <Contact />
+      </section>
       </main>
-    </div>
+    </>
   );
 }
